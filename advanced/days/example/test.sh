@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for solution in solutions/*/*.py; do
 	python3 $solution > $solution.output
 
