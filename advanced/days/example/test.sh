@@ -1,5 +1,7 @@
 #!/bin/bash
 
+> ./leaderboard.txt
+
 for solution in solutions/*/*.py; do
 	filename=$(basename -- "$solution")
 	extension="${filename##*.}"
@@ -7,9 +9,8 @@ for solution in solutions/*/*.py; do
 	python3 $solution > $solution.output
 
 	if [[ -n $(diff $solution.output ./answer.txt) ]]; then
-		echo FAIL - $filename >> ./leaderboard.txt
+		echo ❌ - $filename >> ./leaderboard.txt
 	else
-		echo SUCCESS - $filename >> ./leaderboard.txt
+		echo ✅ - $filename >> ./leaderboard.txt
 	fi
 done
-

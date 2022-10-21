@@ -1,2 +1,2 @@
-FAIL - nolawi
-SUCCESS - slate
+❌ - nolawi
+✅ - slate
