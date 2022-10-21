@@ -1,2 +1,6 @@
-❌ - nolawi
-✅ - slate
+----------Completion Checks----------
+Name     |     Status      |     Time
+-------------------------------------
+nolawi          ❌               17
+ryan-alumkal          ✅               1017
+slate          ✅               4022
