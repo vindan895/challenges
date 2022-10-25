@@ -1,0 +1,33 @@
+name: Run Tests
+on: [push]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install essentials
+        run: |
+          sudo apt-get update;
+          sudo apt-get install python3
+      
+      - name: Print versions
+        run: |
+          python3 --version
+      
+      - name: Run checker
+        run: |
+          ./advanced/days/example/test.sh 
+      
+      - name: Check for failures
+        run: | 
+          ! grep -r "❌" ./advanced/days/example/test.sh
+          exit $?
+          
+      - name: Push leaderboards
+        if: always() && github.event.name == 'push' && github.ref == 'refs/head/master'
+        run: |
+          git config --local user.email 41898282+github-actions[bot]@users.noreply.github.com;
+          git config --local user.name "github-actions[bot]";
+          git add .
+          git commit -m "Ran tests and updated leaderboards"
+          git push
+          
