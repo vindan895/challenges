@@ -15,10 +15,10 @@ jobs:
       
       - name: Run checker
         run: |
-          ls
-          cd advanced/days/example/
-          pwd
-          ./test.sh 
+          ls \
+          cd advanced/days/example/ \
+          pwd \
+          ./test.sh \ 
       
       - name: Check for failures
         run: | 
