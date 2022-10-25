@@ -1,0 +1,4 @@
+----------Completion Checks----------
+Name     |     Status      |     Time
+-------------------------------------
+slate          ✅               26
