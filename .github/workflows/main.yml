@@ -15,6 +15,7 @@ jobs:
       
       - name: Run checker
         run: |
+          pwd
           ./advanced/days/example/test.sh 
       
       - name: Check for failures
