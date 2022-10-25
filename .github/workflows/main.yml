@@ -15,7 +15,7 @@ jobs:
       
       - name: Run checker
         run: |
-          ls
+          ls .
           pwd
       
       - name: Check for failures
