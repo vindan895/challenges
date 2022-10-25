@@ -16,7 +16,7 @@ jobs:
       - name: Run checker
         run: |
           ls
-          cd advanced/days/example/
+          pwd
       
       - name: Check for failures
         run: | 
