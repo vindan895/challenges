@@ -1,6 +1,6 @@
 ----------Completion Checks----------
 Name     |     Status      |     Time
 -------------------------------------
-nolawi          ❌               17
-ryan-alumkal          ✅               1017
-slate          ✅               4022
+nolawi          ✅               2039
+ryan-alumkal          ✅               1032
+slate          ✅               4034
