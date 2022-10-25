@@ -15,12 +15,13 @@ jobs:
       
       - name: Run checker
         run: |
+          cd advanced/days/example/
           pwd
-          ./advanced/days/example/test.sh 
+          ./test.sh 
       
       - name: Check for failures
         run: | 
-          ! grep -r "❌" ./advanced/days/example/test.sh
+          ! grep -r "❌" ./advanced/days/example/leaderboard.txt
           exit $?
           
       - name: Push leaderboards
