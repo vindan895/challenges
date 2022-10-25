@@ -15,6 +15,7 @@ jobs:
       
       - name: Run checker
         run: |
+          ls
           cd advanced/days/example/
           pwd
           ./test.sh 
