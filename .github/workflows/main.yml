@@ -4,6 +4,11 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
       - name: Install essentials
         run: |
           sudo apt-get update;
@@ -15,12 +20,14 @@ jobs:
       
       - name: Run checker
         run: |
+          ls .
           pwd
-          ./advanced/days/example/test.sh 
+          cd advanced/days/example/
+          ./test.sh
       
       - name: Check for failures
         run: | 
-          ! grep -r "❌" ./advanced/days/example/test.sh
+          ! grep -r "❌" ./advanced/days/example/leaderboard.txt
           exit $?
           
       - name: Push leaderboards
