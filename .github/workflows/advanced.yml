@@ -1,6 +1,6 @@
 # Credit for a lot: stelar7/advent-of-code-runner
 
-name: Run Tests
+name: Run Advanced Team Tests
 on: [workflow_dispatch]
 jobs:
   run-tests:
