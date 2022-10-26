@@ -22,10 +22,7 @@ jobs:
         run: |
           ls .
           pwd
-          cd advanced/days/example/
-          ./test.sh
-          cd ../example2/
-          ./test.sh
+          ./tools/run-advanced.sh
       
       - name: Check for failures
         run: | 
