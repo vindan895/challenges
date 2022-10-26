@@ -1,3 +1,5 @@
+# Credit for a lot: stelar7/advent-of-code-runner
+
 name: Run Tests
 on: [workflow_dispatch]
 jobs:
