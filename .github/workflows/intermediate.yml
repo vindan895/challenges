@@ -1,0 +1,40 @@
+# Credit for a lot: stelar7/advent-of-code-runner
+
+name: Run Intermediate Team Tests
+on: [workflow_dispatch]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
+      - name: Install essentials
+        run: |
+          sudo apt-get update;
+          sudo apt-get install python3
+      
+      - name: Print Python Version
+        run: |
+          python3 --version
+      
+      - name: Run Master Script
+        run: |
+          ls .
+          pwd
+          ./tools/run-intermediate.sh
+      
+      - name: Check for failures
+        run: | 
+          grep -r "❌" ./intermediate/days/example/leaderboard.txt
+          
+      - name: Push leaderboards
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com";
+          git config --local user.name "github-actions[bot]";
+          git add .
+          git commit -m "Intermediate Team: Ran tests and updated leaderboards"
+          git push
+          
