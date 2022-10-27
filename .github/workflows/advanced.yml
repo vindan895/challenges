@@ -16,11 +16,11 @@ jobs:
           sudo apt-get update;
           sudo apt-get install python3
       
-      - name: Print versions
+      - name: Print Python Version
         run: |
           python3 --version
       
-      - name: Run checker
+      - name: Run Master Script
         run: |
           ls .
           pwd
@@ -28,13 +28,13 @@ jobs:
       
       - name: Check for failures
         run: | 
-          ! grep -r "❌" ./advanced/days/example/leaderboard.txt
+          grep -r "❌" ./advanced/days/example/leaderboard.txt
           
       - name: Push leaderboards
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com";
           git config --local user.name "github-actions[bot]";
           git add .
-          git commit -m "Ran tests and updated leaderboards"
+          git commit -m "Advanced Team: Ran tests and updated leaderboards"
           git push
           
