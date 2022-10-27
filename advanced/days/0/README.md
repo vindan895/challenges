@@ -30,8 +30,8 @@ Your mission today is simple. With the limited information we have, print the AR
 
 ### Values:
 
-Measurement 1: 2546375247 metres
-Measurement 2: 45987482082 metres
+- Measurement 1: 2546375247 metres
+- Measurement 2: 45987482082 metres
 
 ### Expected output format:
 
