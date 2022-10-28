@@ -25,10 +25,6 @@ jobs:
           ls .
           pwd
           ./tools/run-intermediate.sh
-      
-      - name: Check for failures
-        run: | 
-          grep -r "❌" ./intermediate/days/example/leaderboard.txt
           
       - name: Push leaderboards
         run: |
