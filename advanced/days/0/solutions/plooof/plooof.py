@@ -7,7 +7,7 @@ m1sq = measurement1 * measurement1
 m2sq = measurement2 * measurement2
 m3sq = m1sq + m2sq
 
-measurement3 = math.sqrt(m3sq) // 1
+measurement3 = math.sqrt(m3sq)
 
 area = (measurement1 * measurement2) / 2
 perimeter = measurement1 + measurement2 + measurement3
