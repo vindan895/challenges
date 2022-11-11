@@ -16,7 +16,9 @@ Find and print all the NUMBERS greater than 0 from the written encrypted passwor
 
 ## Mission Resources
 
-- [Print Function](https://github.com/mwcsc/documentation/blob/master/python/01-print-function.md)- [In-built Math Functions](https://github.com/mwcsc/documentation/blob/master/python/02-inbuilt-math-functions.md)- [For Loop](https://github.com/mwcsc/documentation/blob/master/python/05-for-loop.md)
+- [Print Function](https://github.com/mwcsc/documentation/blob/master/python/01-print-function.md)
+- [In-built Math Functions](https://github.com/mwcsc/documentation/blob/master/pyhon/02-inbuilt-math-functions.md)
+- [For Loop](https://github.com/mwcsc/documentation/blob/master/python/05-for-loop.md)
 ## Information:
 
 - The keypad only accepts numbers GREATER than 0
