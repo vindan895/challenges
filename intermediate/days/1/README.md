@@ -17,10 +17,10 @@ Create a program that finds the length of a given set of numbers.
 - Num 1: 645
 - Num 2: 56783
 
-## Expected output format:
+## Expected format:
 
-- **Integer values** (no decimals, no rounding)
-- Should only contain the answer/s
+- No inputs 
+- Output should only contain the answer/s, each seperate one in a different line. No other values or text.
 
 Example:
 
