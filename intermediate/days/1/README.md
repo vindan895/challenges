@@ -2,7 +2,7 @@
 
 ## Welcome to Day 1
 
-Hello and welcome to day 1. In your last mine, you discovered an abandoned mine. After you found the area and perimeter of the mine, we sent a ground team in to find the scientist.
+Hello and welcome to day 1. In your last mission, you discovered an abandoned mine. After you found the area and perimeter of the mine, we sent a ground team in to find the scientist.
 
 They reported finding a locked door, with a sign on it. The sign contained three scrambled passwords. We need to know the length of these passwords, so we can know what they are used for.
 
