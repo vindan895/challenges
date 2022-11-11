@@ -19,6 +19,7 @@ Create a program that finds the length of a given set of numbers.
 
 ## Expected format:
 
+- Use of ```len()``` function is not allowed
 - No inputs 
 - Output should only contain the answer/s, each seperate one in a different line. No other values or text.
 
