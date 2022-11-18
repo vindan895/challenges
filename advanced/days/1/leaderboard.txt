@@ -1,4 +1,5 @@
 ----------Completion Checks----------
 Name     |     Status      |     Time
 -------------------------------------
-anthonytoyco          ✅               22
+AquaDummy          ✅               21
+anthonytoyco          ✅               21
